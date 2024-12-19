@@ -1,0 +1,49 @@
+.holder{
+  border: 5px solid black;
+  border-radius: 35px 35px 0 0;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+   flex-wrap: wrap;
+}
+
+.item{
+ height: 150px;
+ font-size: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-grow: 1;
+
+}
+
+.item:nth-child(1){
+  background-color: red;
+  order: -2;
+  flex-basis: calc(100% / 2);
+  border-radius: 35px 0 0 0;
+}
+
+.item:nth-child(2){
+  background-color: blue;
+  order: 1;
+}
+
+.item:nth-child(3){
+  background-color:darkmagenta ;
+  
+}
+
+.item:nth-child(4){
+  background-color: green ;
+  order: 1;
+}
+
+.item:nth-child(5){
+  background-color:yellow ;
+  order: -1;
+  flex-basis: calc(100% / 2);
+  border-radius: 0 35px 0 0;
+}
